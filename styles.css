@@ -1,0 +1,357 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(127, 144, 161);
+}
+
+nav {
+  background-color: #333;
+  padding: 10px 0;
+}
+.logo {
+  position: absolute;
+  top: -5px;  
+  left: 10px;
+  
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding-right: 30px;
+  text-align: right;
+  text-overflow: clip;
+
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 10px;
+  
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #b966ce;
+  text-decoration-color: #ce3ddb;
+  padding: 5px 10px;
+  background-color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-size: 20px;
+  
+}
+
+nav ul li a:hover {
+  background-color: #0f0e27; /* Change the background color on hover */
+  color: #cee453;
+  transition: background-color 0.5s ease, color 0.4s ease;
+}
+
+header {
+  min-height: 100vh;
+  width: auto;
+  background-image: url('Image/nazim (3).jpg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #a03535;
+}
+
+.container0 {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  color: #fcff5d;
+  width: auto;
+  height: 99%;
+  text-align: right;
+
+
+}
+
+section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+ 
+}
+ span{
+  color: rgb(255, 12, 113);
+  font-size: 40px;
+ }
+
+ .span1{
+  color: #cee453;
+  font-size: 30px;
+  padding-left: 420px
+ }
+ .headline{
+  padding-right: 170px;
+ }
+  
+
+ .container1 {
+  text-align: center;
+  color: #442074;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.profile img {
+  width: 150px;  
+  border-radius: 50%;  
+  margin-right: 20px;
+}
+
+.profile .description p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+
+
+
+.container2 {
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.service {
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f8f8f8; /* Customize the background color as desired */
+  border-radius: 10px;
+}
+
+.service img {
+  width: 100%;
+  height: 150px; /* Adjust the image height as needed */
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+
+.service p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+
+
+
+
+
+
+
+
+.container3 {
+  text-align: center;
+}
+
+.portfolio-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.portfolio-item {
+  position: relative;
+}
+
+.portfolio-item img {
+  width: 100%;
+  max-height: 200px; /* Adjust the max height of the portfolio images as needed */
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Customize the overlay background color and opacity as desired */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  border-radius: 10px;
+}
+
+.overlay:hover {
+  opacity: 1;
+}
+
+.overlay h3 {
+  font-size: 24px;
+  color: #fff; /* Customize the overlay text color as desired */
+  margin-bottom: 10px;
+}
+
+.overlay p {
+  font-size: 18px;
+  color: #fff; /* Customize the overlay text color as desired */
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+.container4 {
+  text-align: center;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 18px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: vertical;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #4caf50; /* Customize the button background color as desired */
+  color: #fff; /* Customize the button text color as desired */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #45a049; /* Customize the button hover background color as desired */
+}
+
+
+
+ 
+section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+section ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+form input,
+form textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+form button {
+  display: block;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 5px 0;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  section {
+    padding: 20px 0;
+  }
+}
+ 
+ 
+ .social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 40px;
+  margin: 10px;
+  font-size: 20px;
+}
+
+.social-icon i {
+  vertical-align: middle;
+  position: fixed;
+}
+
+/* Customize icon colors */
+.social-icon#facebook-link {
+  background-color: #3b5998;
+}
+
+.social-icon#twitter-link {
+  background-color: #1da1f2;
+}
+
+.social-icon#instagram-link {
+  background-color: #ce3ddb;
+}
+
+.social-icon#linkedin-link {
+  background-color: #0077b5;
+}
+
