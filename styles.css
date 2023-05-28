@@ -2,32 +2,31 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: rgb(127, 144, 161);
+  background-color: rgb(47, 68, 88)
 }
 
 nav {
   background-color: #333;
   padding: 10px 0;
 }
+
 .logo {
   position: absolute;
-  top: -5px;  
+  top: -5px;
   left: 10px;
-  
 }
+
 nav ul {
   list-style-type: none;
   margin: 0;
   padding-right: 30px;
   text-align: right;
   text-overflow: clip;
-
 }
 
 nav ul li {
   display: inline-block;
   margin-right: 10px;
-  
 }
 
 nav ul li a {
@@ -38,14 +37,73 @@ nav ul li a {
   background-color: #333;
   transition: background-color 0.3s ease, color 0.3s ease;
   font-size: 20px;
-  
 }
 
 nav ul li a:hover {
-  background-color: #0f0e27; /* Change the background color on hover */
+  background-color: #0f0e27;
   color: #cee453;
   transition: background-color 0.5s ease, color 0.4s ease;
 }
+
+/* Media Queries for Responsive Design */
+
+/* Small devices (up to 576px) */
+@media (max-width: 576px) {
+  .logo {
+    position: static;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Medium devices (576px - 992px) */
+@media (min-width: 577px) and (max-width: 992px) {
+  .logo {
+    position: static;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+/* Large devices (992px and above) */
+@media (min-width: 993px) {
+  .logo {
+    position: absolute;
+    top: -5px;
+    left: 10px;
+  }
+
+  nav ul {
+    text-align: right;
+    padding-right: 30px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+  }
+}
+
 
 header {
   min-height: 100vh;
@@ -58,6 +116,17 @@ header {
   text-align: center;
   color: #a03535;
 }
+.header-top {
+  position: absolute;
+  bottom: 0px;
+  left: 370px;
+  top: 530px;
+  font-size: 30px;
+  color: #f7f33c;
+  padding-left: 180px;
+  padding-bottom: 50px;
+}
+
 
 .container0 {
   max-width: 1200px;
@@ -79,6 +148,8 @@ section {
  span{
   color: rgb(255, 12, 113);
   font-size: 40px;
+  font-style:italic;
+  block-size: 30px;
  }
 
  .span1{
@@ -116,8 +187,6 @@ section {
 
 
 
-
-
 .container2 {
   text-align: center;
 }
@@ -136,13 +205,13 @@ section {
   margin: 20px;
   padding: 20px;
   text-align: center;
-  background-color: #f8f8f8; /* Customize the background color as desired */
+  background-color: #f8f8f8;  
   border-radius: 10px;
 }
 
 .service img {
   width: 100%;
-  height: 150px; /* Adjust the image height as needed */
+  height: 150px;  
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 10px;
@@ -153,11 +222,6 @@ section {
   font-size: 18px;
   line-height: 1.5;
 }
-
-
-
-
-
 
 
 
@@ -179,7 +243,7 @@ section {
 
 .portfolio-item img {
   width: 100%;
-  max-height: 200px; /* Adjust the max height of the portfolio images as needed */
+  max-height: 200px; 
   object-fit: cover;
   border-radius: 10px;
 }
@@ -190,7 +254,7 @@ section {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Customize the overlay background color and opacity as desired */
+  background-color: rgba(0, 0, 0, 0.5); 
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,21 +270,15 @@ section {
 
 .overlay h3 {
   font-size: 24px;
-  color: #fff; /* Customize the overlay text color as desired */
+  color: #fff;  
   margin-bottom: 10px;
 }
 
 .overlay p {
   font-size: 18px;
-  color: #fff; /* Customize the overlay text color as desired */
+  color: #fff;  
   text-align: center;
 }
-
-
-
-
-
-
 
 
 
@@ -263,15 +321,14 @@ textarea {
 button[type="submit"] {
   padding: 10px 20px;
   font-size: 18px;
-  background-color: #4caf50; /* Customize the button background color as desired */
-  color: #fff; /* Customize the button text color as desired */
-  border: none;
+  background-color: #4caf50; 
+  color: #fff;  
   border-radius: 5px;
   cursor: pointer;
 }
 
 button[type="submit"]:hover {
-  background-color: #45a049; /* Customize the button hover background color as desired */
+  background-color: #45a049; 
 }
 
 
